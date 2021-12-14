@@ -1,5 +1,5 @@
 ({
-    myAction : function(component, event, helper) {
-
+    calloutCtrl : function(component, event, helper) {
+          helper.getResponse(component);
     }
 })

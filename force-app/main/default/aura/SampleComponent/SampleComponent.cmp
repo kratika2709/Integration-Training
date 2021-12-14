@@ -5,13 +5,13 @@
        <div class ="slds-media__body">
           <p class="slds-page-header__title slds-truncate" title="Foreign Exchange Rates">Foreign Exchange Rates</p>
           <br/><br/>
-          <lightning-button variant="brand" aria-label="Show Foreign Exchange Rates" onclick="{!c.calloutCtrl}"/>
+          <lightning:button variant="brand" label="Show Foreign Exchange Rates" onclick="{!c.calloutCtrl}"/>
        </div>
    </div>
 
    <h3 class="slds-section-title--divider">Date : {!v.response.date}</h3>
    <ul class="slds-list--dotted">
-       <aura:iteration items={!v.ListOfCurrency} var="ratelist">
+       <aura:iteration items="{!v.ListOfCurrency}" var="ratelist">
            <li>{!ratelist}</li>
        </aura:iteration>
    </ul>

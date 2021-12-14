@@ -9,7 +9,7 @@
          console.log('Result--->',response.getReturnValue())
          component.set("v.response",response.getReturnValue());    
          var getAllRates = component.get("v.response")['rates'];
-         console.log(getAllRates); 
+         console.log(JSON.stringify(getAllRates)); 
          var CurrencyList =[];
          for (var key in getAllRates){
             CurrencyList.push(key+ '='+getAllRates[key]);
